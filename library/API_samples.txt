@@ -1,0 +1,72 @@
+user strory 1: to list all books
+API : http://127.0.0.1:8000/books/get_books/
+method : GET
+=============================================
+user story 2 : list all authors 
+API : http://127.0.0.1:8000/books/get_authors/
+method : GET
+=============================================
+user story 3 : filter books based on their title, number of pages, release date, author
+API : http://127.0.0.1:8000/books/books_get_filters/
+method : POST
+payload : {"filters":{"title":"police", "number_of_pages":200, "author":2, "release_date":"2023-10-10"}}
+Can able to search individually also by adding the specified fileter.
+=============================================
+user story 4 : filter authors based on their name, surname, email
+API : http://127.0.0.1:8000/books/authors_get_filters/
+method : POST
+payload : {"filters":{"first_name":"kannan", "last_name":"balakrishnan", "email":"k"}}
+Can able to search individually also by adding the specified fileter.
+==============================================
+user story 5 : add new/update/remove books onto a library system
+
+add new book
+API : http://127.0.0.1:8000/books/get_books/
+method : POST
+payload : {"title":"new book updated", "description":"newbook", "number_of_pages":200, "genre":3, "author":[2]}
+
+update existing book
+add new book
+API : http://127.0.0.1:8000/books/get_books/4
+method : PUT
+payload : {"title":"new book updated", "description":"newbook", "number_of_pages":200, "genre":3, "author":[2]}
+
+delete existing book
+add new book
+API : http://127.0.0.1:8000/books/get_books/4
+method : DELETE
+The associated author of the book is only deleted if he/she has not associated with any other book.
+===============================================
+user story 6 : add new/update/remove authors onto a library system
+
+add new author
+API : http://127.0.0.1:8000/books/get_authors/
+method : POST
+payload : {"author_details":{"username":"new_author2", "first_name":"new authorUpdatedTest", "last_name":"lastNameUpdatedTest", "email":"newauthor@gmail.com", "gender":2, "user_type":1}, "author_identification_name":"new authorupdated"}
+
+update existing author
+add new book
+API : http://127.0.0.1:8000/books/get_authors/4
+method : PUT
+payload : {"author_details":{"username":"new_author2", "first_name":"new authorUpdatedTest", "last_name":"lastNameUpdatedTest", "email":"newauthor@gmail.com", "gender":2, "user_type":1}, "author_identification_name":"new authorupdated"}
+
+delete existing author
+add new book
+API : http://127.0.0.1:8000/books/get_authors/4
+method : DELETE
+The associated author is only deleted if he/she has not associated in a book.
+
+
+
+
+
+
+
+API : http://127.0.0.1:8000/books/books_get_filters/
+method : POST
+{"filters":{"title":"police", "number_of_pages":200, "author":2, "release_date":"2023-10-10"}}
+===============================================================================================
+API : http://127.0.0.1:8000/books/authors_get_filters/
+method : POST
+{"filters":{"first_name":"kannan", "last_name":"balakrishnan", "email":"k"}}
+===============================================================================================
