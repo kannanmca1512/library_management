@@ -45,13 +45,11 @@ python manage.py runserver
 You can navigate to ```http://127.0.0.1:8000/``` to start testing the APIs.
 
 ## Testing
-Create a superuser to access the admin panel and add some users from there. Also 
-should make sure that the user has to be mapped with a user profile object, Because 
-we have stored additional information of a user apart from default user model.
+Create a superuser to access the admin panel.
 [create superuser](https://www.geeksforgeeks.org/how-to-create-superuser-in-django/)
 
 ## Testing apis
 You can test the apis using postman.
 Navigate to the project root directory, and execute the APIs given in the 
-```apis.txt``` to view the results.
+```API_samples.txt``` to view the results.
 
