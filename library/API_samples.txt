@@ -15,7 +15,7 @@ Can able to search individually also by adding the specified fileter.
 user story 4 : filter authors based on their name, surname, email
 API : http://127.0.0.1:8000/books/authors_get_filters/
 method : POST
-payload : {"filters":{"first_name":"kannan", "last_name":"balakrishnan", "email":"k"}}
+payload : {"filters":{"first_name":"Test", "last_name":"User", "email":"k"}}
 Can able to search individually also by adding the specified fileter.
 ==============================================
 user story 5 : add new/update/remove books onto a library system
